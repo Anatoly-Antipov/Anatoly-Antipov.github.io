@@ -19,36 +19,42 @@
 <td id="layout-content">
 <p>
 </p>
- <h2>Quantum Computation &ndash; Quantum Error Correction
+<h2>Quantum Computation &ndash; Quantum Error Correction (work in progress)
+</h2>
+<p>
+</p>
+<table class="imgtable"><tr><td>
+<img src="CNOT_defects.png" alt="1000px" width="400px" />&nbsp;</td>
+<td align="left"><p>An evolution of a logical state is well described by the superoperator formalism in the case of a logical
+subspace of an error-correction code is not a subject to various transformations. However, there is no general framework that applies to
+the situation when both logical state and its logical subspace change in a potentially non-unitary manner.
+In this work, we present a theoretical framework that offers the way to describe how a logical state evolves under the influence of
+simultaneous changes in both physical state and in the logical subspace structure. These results are applicable to a wide range of cases
+with the most prominent applications to defects movements in surface code. As we expect, our results are of interest for ongoing experiments
+on demonstrating quantum error correction with the use of existing generation of quantum processors, such as those based on
+superconducting circuits and Rydberg atom arrays.<br />
+DOI: <a href="https://zenodo.org/doi/10.5281/zenodo.10299331" target=&ldquo;blank&rdquo;><b>10.5281/zenodo.10299331</b></a><br />
+Also available on <a href="https://arxiv.org/abs/2207.13356" target=&ldquo;blank&rdquo;><b>Arxiv</b></a>
+</p>
+</td></tr></table>
+<h2>Quantum Computation &ndash; Quantum Error Correction
 </h2>
 <p>
 </p>
 <table class="imgtable"><tr><td>
 <img src="QEC.png" alt="1000px" width="400px" />&nbsp;</td>
 <td align="left"><p>We describe a class of neighboring-block stabilizer quantum error correction codes and demonstrate that such a class of codes can be
-
 implemented in a resource-efficient manner using a single ancilla and circular near-neighbor qubit connectivity. We propose an implementation for
-
 syndrome-measurement circuits for codes from the class and illustrate its workings for cases of three-qubit repetition code, Laflamme's five-qubit code,
-
 and Shor's nine-qubit code. For three-qubit repetition code and Laflamme's five-qubit code, the suggested scheme has the property that it uses only native
-
 two-qubit controlled-not-swap gates, which potentially reduces the amount of noncorrectable errors due to the shorter gate time. Elements of the scheme can be
-
 used to implement surface code with near-neighbor connectivity using a single ancilla, as demonstrated in an example. We developed efficient decoding procedures
-
 for repetition codes and the Laflamme's five-qubit code using a minimum-weight perfect-matching approach to account for the specific order of measurements in
-
 our scheme. The analysis of noise levels for which the scheme could show improvements in the fidelity of a stored logical qubit in the three-qubit repetition
-
 code and Laflamme's five-qubit code cases is provided. We complement our results by realizing the developed scheme for a three-qubit code using an
-
 IBM quantum processor and the Laflamme's five-qubit code using the state-vector simulator.<br />
-
 <a href="https://doi.org/10.1103/PhysRevA.107.032403" target=&ldquo;blank&rdquo;><b>Physical Review A</b></a><br />
-
 Also available on <a href="https://arxiv.org/abs/2207.13356" target=&ldquo;blank&rdquo;><b>Arxiv</b></a>
-
 </p>
 </td></tr></table>
 <h2>Quantum Computation &ndash; Quantum Algorithms
@@ -58,27 +64,16 @@ Also available on <a href="https://arxiv.org/abs/2207.13356" target=&ldquo;blank
 <table class="imgtable"><tr><td>
 <img src="5.PNG" alt="1000px" width="400px" />&nbsp;</td>
 <td align="left"><p>Efficient realization of quantum algorithms is among main challenges on the way towards practical quantum computing.
-
 Various libraries and frameworks for quantum software engineering have been developed. Here we present a software package containing implementations
-
 of various quantum gates and well-known quantum algorithms using PennyLane library. Additoinally, we used a simplified technique for decomposition of
-
 algorithms into a set of gates which are native for trapped-ion quantum processor and realized this technique using PennyLane library. The decomposition
-
 is used to analyze resources required for an execution of Shor’s algorithm on the level of native operations of trapped-ion quantum computer.
-
 Our original contribution is the derivation of coefficients needed for implementation of the decomposition. Templates within the package include all
-
 required elements from the quantum part of Shor’s algorithm, specifically, efficient modular exponentiation and quantum Fourier transform that can be realized
-
 for an arbitrary number of qubits specified by a user. All the qubit operations are decomposed into elementary gates realized in PennyLane library.
-
 Templates from the developed package can be used as qubit-operations when defining a QNode.<br />
-
 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0271462" target=&ldquo;blank&rdquo;><b>PLOS ONE</b></a><br />
-
 Also available on <a href="https://arxiv.org/abs/2201.05426" target=&ldquo;blank&rdquo;><b>Arxiv</b></a>
-
 </p>
 </td></tr></table>
 <h2>Statistical Learning &ndash; Nonparametric Logistic Regression
@@ -88,17 +83,11 @@ Also available on <a href="https://arxiv.org/abs/2201.05426" target=&ldquo;blank
 <table class="imgtable"><tr><td>
 <img src="2.png" alt="1000px" width="400px" />&nbsp;</td>
 <td align="left"><p>Following Hastie Tibshirani &ldquo;Elements of Statistical Learning&rdquo;, <b>two techniques</b> are implemented
-
 to make <b>logistic regression model</b> more flexible and robust at the same time: basis expansion using natural splines
-
 and regularization penalizing curvature of the resulting function. Straightforward implementation of these techniques
-
 leads to technical complication: computations are too slow due to numerical integration in the Newton-Raphson routine.
-
 To <b>overcome this issue, a way to perform closed-form integration instead of numerical integration is introduced</b> for both
-
 one-dimensional and multidimensional case.<br />
-
 <a href="https://github.com/Anatoly-Antipov/StatisticalLearning/tree/main/Nonparametric-Logistic-Regression" target=&ldquo;blank&rdquo;><b>Github repository</b></a>
 </p>
 </td></tr></table>
@@ -109,19 +98,12 @@ one-dimensional and multidimensional case.<br />
 <table class="imgtable"><tr><td>
 <img src="KF.PNG" alt="1000px" width="400px" />&nbsp;</td>
 <td align="left"><p>Output gap is the difference between actual GPD and potential GDP. Since we do not observe potential GDP,
-
 estimation of the output gap is very useful for assessing the performance of the economy. Conventional methods to
-
 estimate the output gap, such as Hodrick-Prescott filter, have some drawbacks: estimations are unstable to
-
 additions of recent data from last known time-periods and many simple methods don't take into
-
 account other indicators such as interest rate. Kalman Filter helps to avoid these problems. <b>The specification of
-
 multivariate Kalman Filter</b> was built to assess non-linearly the output gap of the Russian economy <b>taking into account
-
 other economic indicators</b>.<br />
-
 <a href="https://github.com/Anatoly-Antipov/StatisticalLearning/tree/main/KalmanFilter" target=&ldquo;blank&rdquo;><b>Github repository</b></a>
 </p>
 </td></tr></table>
